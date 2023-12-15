@@ -9,12 +9,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) {
 }
 
 /**
- * OwO
+ * 以插件的形式为你的博客提供OwO表情支持。自带将中文名称的表情包转码并生成索引的功能。
  *
  * @package OwO表情插件
  * @author HarryPan
  * @version 1.0.0
- * @link 
+ * @link https://github.com/Harry-Pan/OwOHP-Typecho
  */
  class OwOHP_Plugin implements Typecho_Plugin_Interface {
     /**
