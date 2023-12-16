@@ -27,7 +27,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) {
         Typecho_Plugin::factory('Widget_Abstract_Contents')->contentEx = array('OwOHP_Plugin','contentEx');
         Typecho_Plugin::factory('Widget_Abstract_Contents')->excerptEx = array('OwOHP_Plugin', 'contentEx');
         Typecho_Plugin::factory('Widget_Abstract_Comments')->contentEx = array('OwOHP_Plugin','commentcontentEx');
-        Helper::addRoute("route_ExSearch","/OwOHP","OwOHP_Action",'action');
         //如果你的主题已经在文章编辑页面加入了OwO按钮，可以根据情况注释掉以下三行
         Typecho_Plugin::factory('admin/write-post.php')->bottom = array('OwOHP_Plugin', 'addButton');
         Typecho_Plugin::factory('admin/write-page.php')->bottom = array('OwOHP_Plugin', 'addButton');
