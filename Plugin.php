@@ -13,7 +13,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) {
  *
  * @package OwO表情插件
  * @author HarryPan
- * @version 1.0.0
+ * @version 1.0.1
  * @link https://github.com/Harry-Pan/OwOHP-Typecho
  */
  class OwOHP_Plugin implements Typecho_Plugin_Interface {
