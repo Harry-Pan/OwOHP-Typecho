@@ -4,7 +4,7 @@
  * 
  * 处理请求
  * 
- * @author 熊猫小A
+ * @author HarryPan
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 ?>
@@ -56,7 +56,9 @@ class OwOHP_Action extends Widget_Abstract_Contents implements Widget_Interface_
 	    $dir = './usr/plugins/OwOHP/owo/biaoqing/';
 		$files = scandir($dir);
 	 	$json=new stdClass();
-
+	 	if($oldjson==null){
+	 		$oldjson=new stdClass();
+	 	}
 	 	$oldjsonarray = get_object_vars($oldjson);
 	 	foreach ($oldjsonarray as $name => $package){
 	 		if($package->type=="emoticon"){
@@ -95,7 +97,7 @@ class OwOHP_Action extends Widget_Abstract_Contents implements Widget_Interface_
 					        array_push($json->{$file}->container,$item);
 					        $oldname=$owodir.'/'.$owo;
 					        $newname=$owodir.'/'.str_replace('%', '', urlencode($owo));
-					        echo $oldname.'<br>已转换为：'.$newname;
+					        echo $oldname.'<br>-已转换为：'.$newname.'<br>';
 					        rename($oldname,$newname);
 					    }
 				    }
